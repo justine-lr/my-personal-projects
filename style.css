@@ -1,12 +1,12 @@
 /*
- * purple-color: #5f259f;
- * pink-color: #f04e99;
- */
+* green-color: #3ba88e;
+* pink-color: #f04e99;
+*/
 body {
   margin: 0;
   padding: 0;
   font: 1em/1.5em "Open Sans", sans-serif;
-  background-color: #5f259f;
+  background-color: #3ba88e;
   color: #fff;
 }
 
@@ -37,12 +37,19 @@ header p:nth-child(2) {
 main {
   background-color: white;
   color: black;
-  padding: 2rem 0 4rem;
+  padding: 2rem 0 3rem;
 }
 
 h1 {
-  font-family: "Covered By Your Grace", cursive;
+  font-family: 'Kalam', cursive;
   font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Kalam', cursive;
+  font-size: 3rem;
+  padding: 10px;
   text-align: center;
 }
 
@@ -61,7 +68,7 @@ main p {
   margin: 0 auto 1rem;
 }
 
-.social {
+.projects {
   list-style: none;
   margin: 1rem auto 0;
   padding: 0;
@@ -69,12 +76,12 @@ main p {
   max-width: 80%;
 }
 
-.social li {
+.projects li {
   margin: 0;
   padding: 0;
 }
 
-.social li a {
+.projects li a {
   display: block;
   position: relative;
   padding-left: 3rem;
@@ -84,11 +91,11 @@ main p {
   transition: color 0.2s ease;
 }
 
-.social li a:hover {
-  color: #f04e99;
+.projects li a:hover {
+  color: #3ba88e;
 }
 
-.social li a::before {
+.projects li a::before {
   position: absolute;
   left: 0;
   top: 0;
@@ -97,18 +104,60 @@ main p {
   font: normal 2rem/1em "FontAwesome";
 }
 
-.social li a[rel="github"]::before { content: '\f09b'; }
-.social li a[rel="home"]::before { content: '\f015'; }
-.social li a[rel="twitter"]::before { content: '\f099'; }
+.projects li a[rel="github"]::before { content: '\f09b'; }
+.projects li a[rel="home"]::before { content: '\f015'; }
+.projects li a[rel="linkedin"]::before { content: '\f086'; }
+
+.contact {
+  list-style: none;
+  margin: 1rem auto 0;
+  padding: 0;
+  width: 15rem;
+  max-width: 80%;
+}
+
+.contact li {
+  margin: 0;
+  padding: 0;
+}
+
+.contact li a, .contact li p {
+  display: block;
+  position: relative;
+  padding-left: 3rem;
+  line-height: 2rem;
+  vertical-align: middle;
+  color: #999;
+  transition: color 0.2s ease;
+}
+
+.contact li a:hover {
+  color: #3ba88e;
+}
+
+.contact li a::before, .contact li p::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1em;
+  height: 1em;
+  font: normal 2rem/1em "FontAwesome";
+}
+
+.contact li a[rel="linkedin"]::before { content: '\f08c'; }
+.contact li p[rel="email"]::before { content: '\f199'; }
+
 
 footer {
   margin: 0;
-  padding: 1rem 0 4rem;
+  padding: 2rem;
   text-align: center;
+  color: black;
 }
 
+
 footer img {
-  height: 4rem;
+  height: 3rem;
   width: auto;
   margin: 0 1rem;
 }
