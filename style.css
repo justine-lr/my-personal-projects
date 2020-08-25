@@ -104,9 +104,9 @@ main p {
   font: normal 2rem/1em "FontAwesome";
 }
 
+.projects li a[rel="site"]::before { content: '\f109'; }
 .projects li a[rel="github"]::before { content: '\f09b'; }
 .projects li a[rel="home"]::before { content: '\f015'; }
-.projects li a[rel="linkedin"]::before { content: '\f086'; }
 
 .contact {
   list-style: none;
